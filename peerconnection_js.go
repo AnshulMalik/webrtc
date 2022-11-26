@@ -7,7 +7,6 @@ package webrtc
 import (
 	"syscall/js"
 
-	"github.com/pion/ice/v2"
 	"github.com/pion/webrtc/v3/pkg/rtcerr"
 )
 

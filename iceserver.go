@@ -5,8 +5,8 @@ package webrtc
 
 import (
 	"encoding/json"
+	"github.com/AnshulMalik/ice/v2"
 
-	"github.com/pion/ice/v2"
 	"github.com/pion/webrtc/v3/pkg/rtcerr"
 )
 
