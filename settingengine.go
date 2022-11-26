@@ -8,8 +8,8 @@ import (
 	"net"
 	"time"
 
+	"github.com/AnshulMalik/ice/v2"
 	"github.com/pion/dtls/v2"
-	"github.com/pion/ice/v2"
 	"github.com/pion/logging"
 	"github.com/pion/transport/packetio"
 	"github.com/pion/transport/vnet"
@@ -179,9 +179,13 @@ func (e *SettingEngine) SetIPFilter(filter func(net.IP) bool) {
 // Two types of candidates are supported:
 //
 // ICECandidateTypeHost:
-//		The public IP address will be used for the host candidate in the SDP.
+//
+//	The public IP address will be used for the host candidate in the SDP.
+//
 // ICECandidateTypeSrflx:
-//		A server reflexive candidate with the given public IP address will be added
+//
+//	A server reflexive candidate with the given public IP address will be added
+//
 // to the SDP.
 //
 // Please note that if you choose ICECandidateTypeHost, then the private IP address
@@ -207,9 +211,12 @@ func (e *SettingEngine) SetIncludeLoopbackCandidate(include bool) {
 // may be useful when interacting with non-compliant clients or debugging issues.
 //
 // DTLSRoleActive:
-// 		Act as DTLS Client, send the ClientHello and starts the handshake
+//
+//	Act as DTLS Client, send the ClientHello and starts the handshake
+//
 // DTLSRolePassive:
-// 		Act as DTLS Server, wait for ClientHello
+//
+//	Act as DTLS Server, wait for ClientHello
 func (e *SettingEngine) SetAnsweringDTLSRole(role DTLSRole) error {
 	if role != DTLSRoleClient && role != DTLSRoleServer {
 		return errSettingEngineSetAnsweringDTLSRole

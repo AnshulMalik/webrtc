@@ -1,13 +1,13 @@
-module github.com/pion/webrtc/v3
+module github.com/AnshulMalik/webrtc/v3
 
 go 1.13
 
 require (
+	github.com/AnshulMalik/ice/v2 v2.3.4
 	github.com/onsi/ginkgo v1.16.5 // indirect
-	github.com/onsi/gomega v1.17.0 // indirect
+	github.com/onsi/gomega v1.24.1 // indirect
 	github.com/pion/datachannel v1.5.2
 	github.com/pion/dtls/v2 v2.1.5
-	github.com/pion/ice/v2 v2.2.12
 	github.com/pion/interceptor v0.1.11
 	github.com/pion/logging v0.2.2
 	github.com/pion/randutil v0.1.0
@@ -19,8 +19,5 @@ require (
 	github.com/pion/transport v0.13.1
 	github.com/sclevine/agouti v3.0.0+incompatible
 	github.com/stretchr/testify v1.7.1
-	golang.org/x/crypto v0.0.0-20221010152910-d6f0a8c073c2 // indirect
-	golang.org/x/net v0.1.0
+	golang.org/x/net v0.2.0
 )
-
-replace github.com/pion/ice/v2 v2.2.12 => github.com/AnshulMalik/ice/v2 v2.3.4

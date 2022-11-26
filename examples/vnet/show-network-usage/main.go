@@ -13,7 +13,7 @@ import (
 
 	"github.com/pion/logging"
 	"github.com/pion/transport/vnet"
-	"github.com/pion/webrtc/v3"
+	"github.com/AnshulMalik/webrtc/v3"
 )
 
 /* VNet Configuration

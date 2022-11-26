@@ -8,7 +8,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/pion/ice/v2"
+	"github.com/AnshulMalik/ice/v2"
 	"github.com/pion/logging"
 )
 
@@ -105,10 +105,8 @@ func (g *ICEGatherer) createAgent() error {
 		PrflxAcceptanceMinWait: g.api.settingEngine.timeout.ICEPrflxAcceptanceMinWait,
 		RelayAcceptanceMinWait: g.api.settingEngine.timeout.ICERelayAcceptanceMinWait,
 		InterfaceFilter:        g.api.settingEngine.candidates.InterfaceFilter,
-		IPFilter:               g.api.settingEngine.candidates.IPFilter,
 		NAT1To1IPs:             g.api.settingEngine.candidates.NAT1To1IPs,
 		NAT1To1IPCandidateType: nat1To1CandiTyp,
-		IncludeLoopback:        g.api.settingEngine.candidates.IncludeLoopbackCandidate,
 		Net:                    g.api.settingEngine.vnet,
 		MulticastDNSMode:       mDNSMode,
 		MulticastDNSHostName:   g.api.settingEngine.candidates.MulticastDNSHostName,
