@@ -22,3 +22,5 @@ require (
 	golang.org/x/crypto v0.0.0-20221010152910-d6f0a8c073c2 // indirect
 	golang.org/x/net v0.1.0
 )
+
+replace github.com/pion/ice/v2 v2.2.12 => github.com/AnshulMalik/ice/v2 v2.3.3
