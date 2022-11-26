@@ -23,4 +23,4 @@ require (
 	golang.org/x/net v0.1.0
 )
 
-replace github.com/pion/ice/v2 v2.2.12 => github.com/AnshulMalik/ice/v2 v2.3.3
+replace github.com/pion/ice/v2 v2.2.12 => github.com/AnshulMalik/ice/v2 v2.3.4
